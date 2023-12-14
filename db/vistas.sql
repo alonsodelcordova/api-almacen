@@ -1,4 +1,3 @@
------   ver kardex --------------
 CREATE VIEW ver_kardex AS
     SELECT 
         kar.codigo_transaccion AS codigo_transaccion,
@@ -12,14 +11,13 @@ CREATE VIEW ver_kardex AS
         kar.cantidad AS cantidad,
         kar.fecha_creacion AS fecha_creacion
     FROM
-        (((api_maestria.kardex kar
-        JOIN api_maestria.productos pro ON (pro.id_producto = kar.id_producto))
-        JOIN api_maestria.operaciones op ON (op.id_operacion = kar.id_operacion))
-        JOIN api_maestria.movimientos mov ON (mov.id_movimiento = kar.id_movimiento));
+        (((kardex kar
+        JOIN productos pro ON (pro.id_producto = kar.id_producto))
+        JOIN operaciones op ON (op.id_operacion = kar.id_operacion))
+        JOIN movimientos mov ON (mov.id_movimiento = kar.id_movimiento));
 
-go;
 
------   ver venta --------------
+
 CREATE VIEW ver_venta AS
 select v.id_venta, v.id_metodopago, mp.metodopago, v.id_cliente, cl.razon_social, 
 v.id_vendedor, vn.nombre_completo, v.id_tipocomprobante, 
@@ -36,7 +34,6 @@ left join metodopago mp on mp.id_metodopago=v.id_metodopago
 left join clientes cl ON cl.id_cliente = v.id_cliente
 left join vendedor vn on vn.id_vendedor=v.id_vendedor;
 
------   ver detalle venta --------------
 CREATE VIEW ver_detalle_venta AS
 select dv.id_detalleventa, dv.id_venta, dv.serie, dv.codigo, dv.id_producto, p.nombre as nombre_producto,
 dv.cantidad, dv.precio_venta, dv.total, dv.subtotal, dv.igv, dv.fecha_creacion
