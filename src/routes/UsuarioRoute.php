@@ -1,7 +1,4 @@
 <?php
-namespace Api\Routes;
-use Api\Services\UsuarioService;
-use Api\Config\BaseRoute;
 
 class UsuarioRoute extends BaseRoute{
 

@@ -1,7 +1,4 @@
 <?php
-namespace Api\Routes;
-use Api\Services\ProductService;
-use Api\Config\BaseRoute;
 
 class MovimientoRoute extends BaseRoute{
 

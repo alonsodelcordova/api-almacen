@@ -1,11 +1,4 @@
 <?php
-namespace Api\Services;
-use Api\Config\Database;
-use Api\Config\BaseService;
-use Api\Models\UsuarioModel;
-use Api\Services\UsuarioService;
-use Exception;
-use PDO;
 
 
 class SeguridadService extends BaseService {

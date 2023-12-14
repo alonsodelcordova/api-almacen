@@ -1,8 +1,5 @@
 <?php
 
-namespace Api\Config;
-use PDO;
-use PDOException;
 
 class Database {
   private $host='';
@@ -19,7 +16,7 @@ class Database {
     $this->pass = '';
   }
 
-  protected function connect(){
+  public function connect(){
     try {
         $dbConnection = new PDO( 
           "mysql:host=$this->host;port=$this->port;dbname=$this->db",

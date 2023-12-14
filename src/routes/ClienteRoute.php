@@ -1,16 +1,13 @@
 <?php
-namespace Api\Routes;
-use Api\Services\UsuarioService;
-use Api\Config\BaseRoute;
-use Api\Models\ClienteModel;
+
 
 class ClienteRoute extends BaseRoute{
 
-    private $usuarioService;
+    private UsuarioService $usuarioService;
 
     public function __construct() {
         parent::__construct();
-        $this->usuarioService = new UsuarioService();
+        //$this->usuarioService = new UsuarioService();
     }
 
     public function MainClientes() {
@@ -25,6 +22,7 @@ class ClienteRoute extends BaseRoute{
     }
 
     function obtenerClientes() {
+        $this->usuarioService = new UsuarioService();
         $clientes = $this->usuarioService->consultarClientes();
         $this->success_rpta($clientes);
     }

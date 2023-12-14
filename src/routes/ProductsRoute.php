@@ -1,10 +1,4 @@
 <?php
-namespace Api\Routes;
-use Api\Services\ProductService;
-use Api\Config\BaseRoute;
-use Api\Models\ProductoModel;
-use Api\Models\KardexMovimientoModel;
-use Api\Services\KardexService;
 
 class ProductsRoute extends BaseRoute{
 

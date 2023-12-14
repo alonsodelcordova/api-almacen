@@ -1,14 +1,5 @@
 
 <?php
-use Api\Routes\ProductsRoute;
-use Api\Routes\UsuarioRoute;
-use Api\Routes\CategoriaRoute;
-use Api\Routes\AlmacenRoute;
-use Api\Routes\UnidadMedidaRoute;
-use Api\Routes\ClienteRoute;
-use Api\Routes\MovimientoRoute;
-use Api\Routes\SeguridadRoute;
-use Api\Routes\VentasRoute;
 
 class Api{
     

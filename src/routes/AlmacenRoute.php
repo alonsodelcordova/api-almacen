@@ -1,11 +1,9 @@
 <?php
-namespace Api\Routes;
-use Api\Services\ProductService;
-use Api\Config\BaseRoute;
+
 
 class AlmacenRoute extends BaseRoute{
 
-    private $productService;
+    private ProductService $productService;
 
     public function __construct() {
         parent::__construct();

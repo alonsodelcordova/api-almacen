@@ -1,6 +1,5 @@
 <?php
 
-namespace Api\Models;
 
 class VentaModel{
     public int $id;

@@ -1,5 +1,4 @@
 <?php
-namespace Api\Models;
 
 class ProductoModel{
     

@@ -1,12 +1,4 @@
 <?php
-namespace Api\Services;
-use Api\Models\UsuarioModel;
-use Api\Models\ClienteModel;
-use Api\Config\Database;
-use Api\Config\BaseService;
-use Exception;
-use PDO;
-
 
 class UsuarioService extends BaseService{
 

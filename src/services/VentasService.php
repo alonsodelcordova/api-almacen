@@ -1,11 +1,4 @@
 <?php
-namespace Api\Services;
-use Api\Models\VentaModel;
-use Api\Config\BaseService;
-use Api\Models\DetalleVentaModel;
-use Api\Models\MetodoPagoModel;
-use Exception;
-use PDO;
 
 class VentasService extends BaseService{
 

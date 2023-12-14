@@ -1,10 +1,4 @@
 <?php
-namespace Api\Services;
-use Api\Models\KardexMovimientoModel;
-use Api\Config\BaseService;
-use Exception;
-use PDO;
-
 
 class KardexService extends BaseService{
 

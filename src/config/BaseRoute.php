@@ -1,7 +1,4 @@
 <?php
-namespace Api\Config;
-
-use DateTime;
 
 class BaseRoute{
 

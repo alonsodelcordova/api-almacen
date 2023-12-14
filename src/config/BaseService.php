@@ -1,16 +1,14 @@
 <?php
-namespace Api\Config;
-use Api\Config\Database;
-use PDO;
-use PDOException;
 
-class BaseService extends Database{
 
-	protected $conexion;
+class BaseService {
+
+	public $conexion;
+	public Database $db;
 
 	public function __construct(){
-		parent::__construct();
-		$this->conexion = $this->connect();
+		$this->db = new Database();
+		$this->conexion = $this->db->connect();
 	}
 
 

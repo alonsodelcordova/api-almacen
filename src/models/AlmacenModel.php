@@ -1,5 +1,5 @@
 <?php
-namespace Api\Models;
+
 
 class AlmacenModel{
     

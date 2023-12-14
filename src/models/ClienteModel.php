@@ -1,6 +1,5 @@
 <?php
 
-namespace Api\Models;
 
 class ClienteModel{
     public int $id;

@@ -1,9 +1,4 @@
 <?php
-namespace Api\Routes;
-use Api\Services\VentasService;
-use Api\Config\BaseRoute;
-use Api\Models\DetalleVentaModel;
-use Api\Models\VentaModel;
 
 class VentasRoute extends BaseRoute{
 

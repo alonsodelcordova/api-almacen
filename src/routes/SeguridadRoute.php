@@ -1,7 +1,4 @@
 <?php
-namespace Api\Routes;
-use Api\Services\SeguridadService;
-use Api\Config\BaseRoute;
 
 class SeguridadRoute extends BaseRoute{
 

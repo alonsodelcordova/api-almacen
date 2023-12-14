@@ -1,15 +1,4 @@
 <?php
-namespace Api\Services;
-use Api\Models\ProductoModel;
-use Api\Models\CategoriaModel;
-use Api\Models\AlmacenModel;
-use Api\Models\UnidadMedidaModel;
-use Api\Models\KardexMovimientoModel;
-use Api\Models\MovimientoModel;
-use Api\Config\BaseService;
-use Exception;
-use PDO;
-
 
 class ProductService extends BaseService{
 
