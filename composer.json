@@ -1,0 +1,21 @@
+{
+   "name": "jacs/api",
+    "description": "JACS API",
+    "type": "project",
+    "keywords": [
+        "jacs",
+        "api"
+    ],
+    "require": {
+
+    },
+    "autoload": {
+        "psr-4": {
+            "Api\\": "src/"
+        },
+        "files": [
+            "src/Api.php"
+        ]
+    },
+    "license": "MIT"
+}
